@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Cpp program to find largest digit in a number.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to find largest digit in a number.</h2>
+<p class="program">#include< iostream ><br>
+#include< vector ><br>
+#include< conio.h ><br>
+using namespace std;<br>
+int main(){<br>
+	system("cls");<br>
+	vector <int> v1;<br>
+	int n,i,max=0,m;<br>
+	cout<<"Enter the length of your number ";<br>
+	cin>>n;<br>
+	cout<<"\nEnter digits one by one numbers ";<br>
+	for(i=0;i<n;i++){<br>
+		cin>>m;<br>
+		v1.push_back(m);<br>
+	}<br>
+	vector <int>::iterator start = v1.begin();<br>
+	for(i=0;i<n;i++){<br>
+		if(max<*(start+i)){<br>
+			max=*(start+i);<br>
+		}<br>
+	}<br>
+	cout<<"Largest digit is "<< max;<br>
+	getch();<br>
+}</p>
+<img src="Cpp11.png"><br>
+</body>
+</html>

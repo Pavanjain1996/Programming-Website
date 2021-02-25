@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Cpp program to find out cricket batting averages.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to find out cricket batting averages.</h2>
+<p class="program">#include< iostream ><br> 
+#include< iomanip ><br>
+#include< cstdlib ><br>
+using namespace std;<br>
+class batsman{<br>
+	char name[10];<br>
+	int runs;<br>
+	int innings;<br>
+	int tno;<br>
+	float avg;<br>
+	public:<br>
+		void getData(){<br>
+			cout<<"Enter name : ";<br>
+			cin>>name;<br>
+			fflush(stdin);<br>
+			cout<<"Enter runs : ";<br>
+			cin>>runs;<br>
+			cout<<"Enter innings : ";<br>
+			cin>>innings;<br>
+			cout<<"Enter innings not out : ";<br>
+			cin>>tno;<br>
+		}<br>
+		void calcAvg(){<br>
+			avg=(float)runs/(float)(innings-tno);<br>
+		}<br>
+		void showData(){<br>
+			cout<< setw(10)<< name;<br>
+			cout<< setw(10)<< runs;<br>
+			cout<< setw(10)<< innings;<br>
+			cout<< setw(10)<< tno;<br>
+			cout<< setw(10)<< avg;<br>
+			cout<< endl;<br>
+		}<br>
+};<br>
+main(){<br>
+	batsman b1,b2,b3;<br>
+	b1.getData();<br>
+	b2.getData();<br>
+	b3.getData();<br>
+	b1.calcAvg();<br>
+	b2.calcAvg();<br>
+	b3.calcAvg();<br>
+	cout<<"\nThe Details are\n\n";<br>
+	b1.showData();<br>
+	b2.showData();<br>
+	b3.showData();<br>
+}</p>
+<img src="Cpp7.png"><br>
+</body>
+</html>

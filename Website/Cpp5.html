@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Cpp program to convert string to uppercase.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to convert string to uppercase.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+#include< string.h ><br>
+using namespace std;<br>
+main(){<br>
+	char arr[25];<br>
+	int i;<br>
+	cout<<"\nEnter a string : ";<br>
+	cin.getline(arr,25);<br>
+	for(i=0;i< strlen(arr);i++){<br>
+		if((int)arr[i]>=97){<br>
+			arr[i]=(char)((int)arr[i]-32);<br>
+		}<br>
+	}<br>
+	cout<<"\nString in upper case alphabets is : ";<br>
+	for(i=0;i< strlen(arr);i++)<br>
+		cout<< arr[i];<br>
+	getch();<br>
+}</p>
+<img src="Cpp5.png"><br>
+</body>
+</html>

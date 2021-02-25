@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Java program to find HCF of two numbers.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Java program to find HCF of two numbers.</h2>
+<p class="program">import java.util.Scanner;<br>
+class Example{<br>
+public static void main(String []args){<br>
+int i,a,b,small;<br>
+Scanner sc=new Scanner(System.in);<br>
+System.out.println("Enter two numbers"0);<br>
+a=sc.nextInt();<br>
+b=sc.nextInt();<br>
+if(a>b)<br>
+small=b;<br>
+else<br>
+small=a;<br>
+for(i=small;i>0;i--){<br>
+if(a%i==0 && b%i==0){<br>
+break;<br>
+}<br>
+}<br>
+System.out.println("The HCF is : "+i);<br>
+}<br>
+}</p>
+<img src="Java25.png"><br>
+</body>
+</html>

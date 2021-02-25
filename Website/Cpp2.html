@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Cpp program to check whether a string is alphanumeric or not.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to check whether a string is alphanumeric or not.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+using namespace std;<br>
+main(){<br>
+	char arr[20];<br>
+	int t1=0,t2=0,i=0;<br>
+	cout<<"\n\tEnter a String : ";<br>
+	cin.getline(arr,19);<br>
+	while(arr[i]!='\0'){<br>
+		if(((int)arr[i]>=65 && (int)arr[i]<=90) || ((int)arr[i]>=97 && (int)arr[i]<=122)){<br>
+			t1=1;<br>
+		}<br>
+		if((int)arr[i]>=48 && (int)arr[i]<=57){<br>
+			t2=1;<br>
+		}<br>
+		if(t1==1 && t2==1){<br>
+			cout<<"\n\n\tString is AlphaNumeric";<br>
+			break;<br>
+		}<br>
+		i++;<br>
+	}<br>
+	if(t1==0 || t2==0)<br>
+		cout<<"\n\n\tString is not AlphaNumeric";<br>
+	getch();<br>
+}</p>
+<img src="Cpp2-1.png"><br>
+<img src="Cpp2-2.png"><br>
+</body>
+</html>

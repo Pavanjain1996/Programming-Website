@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Cpp program to convert temperature fron farhenheit to celcius.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to convert temperature fron farhenheit to celcius.</h2>
+<p class="program">#include< iostream ><br>
+using namespace std;<br>
+class temp{<br>
+	float tempf;<br>
+	public:<br>
+		void setTemp(){<br>
+			cin>>tempf;<br>
+		}<br>
+		float toCelcius(){<br>
+			float tempc=(tempf-32)*5.0/9.0;<br>
+			return tempc;<br>
+		}<br>
+};<br>
+main(){<br>
+	temp t1;<br>
+	cout<<"Enter temperature in farhenhiet : ";<br>
+	t1.setTemp();<br>
+	cout<<"\nThe temperature is celcius is : "<< t1.toCelcius();<br>
+}</p>
+<img src="Cpp25.png"><br>
+</body>
+</html>

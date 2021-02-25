@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Python program to solve quadritic equation.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Python program to solve quadritic equation.</h2>
+<p class="program">import math<br>
+a=int(input("Enter coefficient a : "))<br>
+b=int(input("Enter coefficient b : "))<br>
+c=int(input("Enter coefficient c : "))<br>
+d=b*b-(4*a*c)<br>
+if d==0:<br>
+    print("Roots are real and equal")<br>
+    root=(-b/(2*a))<br>
+    print("X = "+str(root)+"\n")<br>
+elif d>0:<br>
+    print("Roots are real and distinct")<br>
+    r1=(-b+math.sqrt(d))/2*a<br>
+    r2=(-b-math.sqrt(d))/2*a<br>
+    print("X = "+str(r1)+" Y = "+str(r2)+"\n")<br>
+else:<br>
+    print("Roots are imaginary")</p>
+<img src="Python4.png"><br>
+</body>
+</html>

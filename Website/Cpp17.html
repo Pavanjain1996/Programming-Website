@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Cpp program to check whether a number is prime or not.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to check whether a number is prime or not.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+using namespace std;<br>
+int main(){<br>
+	system("cls");<br>
+	int n,i,flag=0;<br>
+	cout<<"Enter a Number : ";<br>
+	cin>>n;<br>
+	if(n==1)<br>
+	   cout<<"1 is not prime";<br>
+    else{<br>
+	for(i=2;i<=n/2;i++){<br>
+			if(n%i==0){<br>
+				flag=1;<br>
+				break;<br>
+			}<br>
+		}<br>
+		if(flag==0)<br>
+		  cout<< n<<" is prime";<br>
+		else<br>
+		  cout<< n<<" is not prime";<br>
+	}<br>
+	getch();<br>
+}</p>
+<img src="Cpp17-1.png"><br>
+<img src="Cpp17-2.png"><br>
+</body>
+</html>

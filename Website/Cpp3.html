@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Cpp program to check a number is armstrong number or not.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to check a number is armstrong number or not.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+#include< string.h ><br>
+#include< math.h ><br>
+using namespace std;<br>
+main(){<br>
+	char arr[10];<br>
+	cout<<"Enter a number : ";<br>
+	cin.getline(arr,9);<br>
+	int num=0,resnum=0;<br>
+	for(int i=0;i<strlen(arr);i++){<br>
+		num=(10*num)+(int)arr[i]-48;<br>
+	}<br>
+	switch(strlen(arr)){<br>
+		case 1:<br>
+			resnum=resnum+(((int)arr[0]-48)*((int)arr[0]-48)*((int)arr[0]-48));<br>
+			break;<br>
+		case 3:<br>
+			for(int i=0;i<strlen(arr);i++){<br>
+				resnum=resnum+(((int)arr[i]-48)*((int)arr[i]-48)*((int)arr[i]-48));<br>
+			}	<br>
+	}<br>
+	if(resnum==num)<br>
+		cout<< num<<" is an ArmStrong number";<br>
+	else<br>
+		cout<< num<<" is not an ArmStrong number";<br>
+	getch();<br>
+}</p>
+<img src="Cpp3-1.png"><br>
+<img src="Cpp3-2.png"><br>
+</body>
+</html>

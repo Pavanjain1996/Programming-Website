@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Cpp program to calculate sum of digits.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to calculate sum of digits.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+#include< string.h ><br>
+using namespace std;<br>
+main(){<br>
+	char arr[20];<br>
+	int i,temp=0;<br>
+	cout<<"\n\tEnter a number : ";<br>
+	cin.getline(arr,19);<br>
+	for(i=0;i< strlen(arr);i++)<br>
+		temp+=(int)arr[i]-48;<br>
+	cout<<"\n\tSum of digits is : "<< temp;<br>
+	getch();<br>
+}</p>
+<img src="Cpp24.png"><br>
+</body>
+</html>

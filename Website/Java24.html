@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Java program to find LCM of two numbers.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Java program to find LCM of two numbers.</h2>
+<p class="program">import java.util.Scanner;<br>
+class Example{<br>
+public static void main(String []args){<br>
+int i,a,b,lar;<br>
+Scanner sc=new Scanner(System.in);<br>
+System.out.println("Enter two numbers");<br>
+a=sc.nextInt();<br>
+b=sc.nextInt();<br>
+if(a>b)<br>
+lar=a;<br>
+else<br>
+lar=b;<br>
+for(i=lar;i<=a*b;i++){<br>
+if(i%a==0 && i%b==0){<br>
+break;<br>
+}<br>
+}<br>
+System.out.println("The LCM is : "+i);<br>
+}<br>
+}</p>
+<img src="Java24.png"><br>
+</body>
+</html>

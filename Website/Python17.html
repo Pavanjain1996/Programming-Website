@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Python program to Python program to convert decimal hexadecimal.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Python program to Python program to convert decimal hexadecimal.</h2>
+<p class="program">a=int(input("Enter a decimal number : "))<br>
+print("The hexadecimal number is")<br>
+hexadecimal=[]<br>
+while a>0:<br>
+    t=a%16<br>
+    if t==10:<br>
+        hexadecimal.append('A')<br>
+<br>
+    elif t==11:<br>
+        hexadecimal.append('B')<br>
+<br>
+    elif t==12:<br>
+        hexadecimal.append('C')<br>
+<br>
+    elif t==13:<br>
+        hexadecimal.append('D')<br>
+<br>
+    elif t==14:<br>
+        hexadecimal.append('E')<br>
+<br>
+    elif t==15:<br>
+        hexadecimal.append('F')<br>
+<br>
+    else:<br>
+        hexadecimal.append(str(t))<br>
+    a=int(a/16)<br>
+<br>
+for i in range(len(hexadecimal)-1,-1,-1):<br>
+    print(str(hexadecimal[i]))</p>
+<img src="Python17.png"><br>
+</body>
+</html>

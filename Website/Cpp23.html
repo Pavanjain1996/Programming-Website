@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Cpp program to sort strings in dictionary order.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to sort strings in dictionary order.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+#include< string.h ><br>
+using namespace std;<br>
+main(){<br>
+	int i,r,j,n,k=10;<br>
+	cout<<"How many names you want to enter : ";<br>
+	cin>>n;<br>
+	char str[n][k],arr[10];<br>
+	cout<<"Enter "<< n<<" names\n\n";<br>
+	for(i=0;i<=n;i++)<br>
+		gets(str[i]);<br>
+	for(i=1;i<=n;i++){<br>
+		for(j=0;j<=n-i;j++){<br>
+			r=strcmp(str[j],str[j+1]);<br>
+			if(r>0){<br>
+				strcpy(arr,str[j]);<br>
+				strcpy(str[j],str[j+1]);<br>
+				strcpy(str[j+1],arr);<br>
+			}<br>
+		}<br>
+	}<br>
+	cout<<"\n\nNames in dictionary order are\n\n";<br>
+	for(i=0;i<=n;i++)<br>
+		puts(str[i]);<br>
+	getch();<br>
+}</p>
+<img src="Cpp23.png"><br>
+</body>
+</html>

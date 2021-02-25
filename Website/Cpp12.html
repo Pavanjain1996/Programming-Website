@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Cpp program to find LCM of two numbers.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to find LCM of two numbers.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+using namespace std;<br>
+int big(int a,int b){<br>
+	if(a>b)<br>
+	  return(a);<br>
+	else<br>
+	  return(b);<br>
+}<br>
+int main(){<br>
+	system("cls");<br>
+	int n1,n2,i,lcm;<br>
+	cout<<"Enter two numbers ";<br>
+	cin>>n1>>n2;<br>
+	for(i=big(n1,n2);i<=(n1*n2);i++){<br>
+		if(i%n1==0 && i%n2==0){<br>
+			lcm=i;<br>
+			break;<br>
+		}<br>
+	}<br>
+	cout<<"L.C.M. of "<< n1<<" and "<< n2<<" is "<< i;<br>
+	getch();<br>
+}</p>
+<img src="Cpp12.png"><br>
+</body>
+</html>

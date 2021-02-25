@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Cpp program to swap first and last digit of a number.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to swap first and last digit of a number.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+#include< string.h ><br>
+using namespace std;<br>
+main(){<br>
+	char arr[20];<br>
+	char temp;<br>
+	int i;<br>
+	cout<<"Enter a number : ";<br>
+	cin.getline(arr,19);<br>
+	temp=arr[0];<br>
+	arr[0]=arr[strlen(arr)-1];<br>
+	arr[strlen(arr)-1]=temp;<br>
+	cout<<endl<<"The desired number is : ";<br>
+	for(i=0;i< strlen(arr);i++)<br>
+		cout<< arr[i];<br>
+	getch();<br>
+}</p>
+<img src="Cpp20.png"><br>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Cpp program to calculate nCr and nPr.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to calculate nCr and nPr.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+using namespace std;<br>
+long int fact(int n){<br>
+	if(n==0 || n==1)<br>
+		return(1);<br>
+	else<br>
+		return(n*fact(n-1));<br>
+}<br>
+main(){<br>
+	int ch,n,r;<br>
+	cout<<"\n\t1.nPr\n\t2.nCr\n\t3.Exit\n\tEnter your choice : ";<br>
+	cin>>ch;<br>
+	if(n>=r){	<br>
+		switch(ch){<br>
+			case 1:<br>
+				cout<<"\n\tEnter the value of n and r : ";<br>
+				cin>>n>>r;<br>
+				cout<<"\n\t"<< n<<" P "<< r<<" = "<< fact(n)/fact(n-r);<br>
+				break;<br>
+			case 2:<br>
+				cout<<"\n\tEnter the value of n and r : ";<br>
+				cin>>n>>r;<br>
+				cout<<"\n\t"<< n<<" C "<< r<<" = "<< fact(n)/(fact(n-r)*fact(r));<br>
+				break;<br>
+			case 3:<br>
+				exit(0);<br>
+		}<br>
+	}<br>
+	getch();<br>
+}</p>
+<img src="Cpp15.png"><br>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>C program to find factorial of a number by recursion (recursively).</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>C program to find factorial of a number by recursion (recursively).</h2>
+<p class="program">#include< stdio.h ><br>
+#include< conio.h ><br>
+int fact(int n){<br>
+	if(n==2)<br>
+		return 2;<br>
+	else<br>
+		return n*fact(n-1);<br>
+}<br>
+int main(){<br>
+	int a;<br>
+	printf("Enter a number : ");<br>
+	scanf("%d",&a);<br>
+	printf("The factorial of %d is %d",a,fact(a));<br>
+	getch();<br>
+}</p>
+<img src="C5.png"><br>
+</body>
+</html>

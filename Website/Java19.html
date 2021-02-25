@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Java program to check whether a number is palindrome or not.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Java program to check whether a number is palindrome or not.</h2>
+<p class="program">import java.util.Scanner;<br>
+class Example{<br>
+public static void main(String []args){<br>
+int n,rn=0;<br>
+System.out.println("Enter a number");<br>
+Scanner sc=new Scanner(System.in);<br>
+n=sc.nextInt();<br>
+int a=n;<br>
+while(n!=0){<br>
+rn=(10*rn)+(n%10);<br>
+n=n/10;<br>
+}<br>
+if(a==rn)<br>
+System.out.println(rn+" is a palindrome");<br>
+else<br>
+System.out.println(rn+" is not a palindrome");<br>
+}<br>
+}</p>
+<img src="Java19.png"><br>
+</body>
+</html>

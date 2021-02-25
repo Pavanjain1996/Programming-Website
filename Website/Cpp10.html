@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Cpp program to find GCD or HCF.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to find GCD or HCF.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+using namespace std;<br>
+int big(int a,int b){<br>
+	if(a>b)<br>
+	  return(a);<br>
+	else<br>
+	  return(b);<br>
+}<br>
+int main(){<br>
+	system("cls");<br>
+	int n1,n2,i,hcf;<br>
+	cout<<"Enter two numbers ";<br>
+	cin>>n1>>n2;<br>
+	for(i=1;i<=big(n1,n2);i++){<br>
+		if(n1%i==0 && n2%i==0){<br>
+			hcf=i;<br>
+		}<br>
+	}<br>
+	cout<<"H.C.F. of "<< n1<<" and "<< n2<<" is "<< hcf;<br>
+	getch();<br>
+}</p>
+<img src="Cpp10.png"><br>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>C program to swap two numbers using pointers.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>C program to swap two numbers using pointers.</h2>
+<p class="program">#include< stdio.h ><br>
+#include< conio.h ><br>
+int main(){<br>
+	int a,b,*p,*q;<br>
+	printf("Enter two numbers : ");<br>
+	scanf("%d%d",&a,&b);<br>
+	p=&a;<br>
+	q=&b;<br>
+	printf("Before swapping\na = %d b = %d",*p,*q);<br>
+	*p=*p+*q;<br>
+	*q=*p-*q;<br>
+	*p=*p-*q;<br>
+	printf("\nAfter swapping\na = %d b = %d",*p,*q);<br>
+	getch();<br>
+}</p>
+<img src="C19.png"><br>
+</body>
+</html>

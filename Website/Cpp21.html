@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Cpp program to to reverse a string.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to to reverse a string.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+#include< string.h ><br>
+using namespace std;<br>
+main(){<br>
+	char string[25];<br>
+	int i;<br>
+	cout<<"Enter a string : ";<br>
+	cin.getline(string,25);<br>
+	char arr[strlen(string)];<br>
+	for(i=0;i< strlen(string);i++){<br>
+		arr[i]=string[strlen(string)-1-i];<br>
+	}<br>
+	cout<<"\nReversed string is : ";<br>
+	for(i=0;i< strlen(string);i++)<br>
+		cout<< arr[i];<br>
+	getch();<br>
+}</p>
+<img src="Cpp21.png"><br>
+</body>
+</html>

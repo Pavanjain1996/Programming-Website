@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Java program to find transpose of a matrix.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Java program to find transpose of a matrix.</h2>
+<p class="program">import java.util.Scanner;<br>
+class Example{<br>
+public static void main(String []args){<br>
+int a[][]=new int[3][3];<br>
+int b[][]=new int[3][3];<br>
+int i,j;<br>
+Scanner sc=new Scanner(System.in);<br>
+System.out.println("Enter Matrix : ");<br>
+for(i=0;i<3;i++){<br>
+for(j=0;j<3;j++){<br>
+a[i][j]=sc.nextInt();<br>
+}<br>
+}<br>
+for(i=0;i<3;i++){<br>
+for(j=0;j<3;j++){<br>
+b[i][j]=a[j][i];<br>
+}<br>
+}<br>
+for(i=0;i<3;i++){<br>
+for(j=0;j<3;j++){<br>
+a[i][j]=b[i][j];<br>
+}<br>
+}<br>
+System.out.println("The transpose matrix is");<br>
+for(i=0;i<3;i++){<br>
+for(j=0;j<3;j++){<br>
+System.out.print(""+a[i][j]+" ");<br>
+}<br>
+System.out.println();<br>
+}<br>
+}<br>
+}</p>
+<img src="Java21.png"><br>
+</body>
+</html>

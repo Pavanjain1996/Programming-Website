@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>C program to use union.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>C program to use union.</h2>
+<p class="program">#include< stdio.h ><br>
+#include< conio.h ><br>
+union Student{<br>
+	char name[10];<br>
+	int age;<br>
+	char gender;<br>
+};<br>
+int main(){<br>
+	union Student s1;<br>
+	printf("Enter Name : ");<br>
+	gets(s1.name);<br>
+	printf("Name : %s",s1.name);<br>
+	printf("\nEnter age : ");<br>
+	scanf("%d",&s1.age);<br>
+	printf("Age : %d",s1.age);<br>
+	fflush(stdin);<br>
+	printf("\nEnter gender : ");<br>
+	scanf("%c",&s1.gender);<br>
+	printf("Gender : %c",s1.gender);<br>
+	getch();<br>
+}</p>
+<img src="C21.png"><br>
+</body>
+</html>

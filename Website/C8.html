@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>C program to find largest in ten numbers.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>C program to find largest in ten numbers.</h2>
+<p class="program">#include< stdio.h ><br>
+#include< conio.h ><br>
+int main(){<br>
+	int a[10],i,lar=0;<br>
+	printf("Enter ten number : ");<br>
+	for(i=0;i<10;i++)<br>
+		scanf("%d",&a[i]);<br>
+	for(i=0;i<10;i++){<br>
+		if(a[i]>lar){<br>
+			lar=a[i];<br>
+		}<br>
+	}<br>
+	printf("The greatest number is %d",lar);<br>
+	getch();<br>
+}</p>
+<img src="C8.png"><br>
+</body>
+</html>

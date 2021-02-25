@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Cpp program to remove adjacent duplicate characters from a string.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to remove adjacent duplicate characters from a string.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+using namespace std;<br>
+char* remove_duplicate(char *s){<br>
+	int i,j;<br>
+	for(i=0;s[i];i++){<br>
+		if(s[i]==s[i+1]){<br>
+			for(j=i+1;s[j];j++){<br>
+				s[j]=s[j+1];<br>
+			}<br>
+			i=-1;<br>
+		}<br>
+	}<br>
+	return(s);<br>
+}<br>
+main(){<br>
+	char arr[20];<br>
+	cout<<"Enter a string : ";<br>
+	cin.getline(arr,19);<br>
+	cout<<"\n\nAfter removing duplicate characters string is\n\n";<br>
+	cout<< remove_duplicate(arr);<br>
+	getch;<br>
+}</p>
+<img src="Cpp19.png"><br>
+</body>
+</html>

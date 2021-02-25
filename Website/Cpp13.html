@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Cpp program to multiply two matrix using 2D array.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to multiply two matrix using 2D array.</h2>
+<p class="program">#include< iostream ><br>
+using namespace std;<br>
+main(){<br>
+	int a[3][3],b[3][3],c[3][3],i,j;<br>
+    cout<<"Enter nine numbers for matrix 1 : "<< endl;<br>
+	for(i=0;i<3;i++){<br>
+		for(j=0;j<3;j++)<br>
+			cin>>a[i][j];<br>
+	}<br>
+	cout<<"\nEnter nine numbers for matrix 2 : "<< endl;<br>
+	for(i=0;i<3;i++){<br>
+		for(j=0;j<3;j++)<br>
+			cin>>b[i][j];<br>
+	}<br>
+	for(i=0;i<3;i++){<br>
+		for(j=0;j<3;j++){<br>
+			c[i][j]=(a[i][0]*b[0][j])+(a[i][1]*b[1][j])+(a[i][2]*b[2][j]);<br>
+		}<br>
+	}<br>
+	cout<<endl;<br>
+	for(i=0;i<3;i++){<br>
+		for(j=0;j<3;j++){<br>
+			cout<< c[i][j]<< ends<< ends;<br>
+		}<br>
+		cout<< endl;<br>
+    }<br>
+}</p>
+<img src="Cpp13.png"><br>
+</body>
+</html>

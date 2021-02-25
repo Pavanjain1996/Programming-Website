@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Cpp program to print your name many times without using loop.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to print your name many times without using loop.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+using namespace std;<br>
+void printName(char * name,int count){<br>
+	if(count<10){<br>
+		cout<< count+1<<" "<< name<< endl;<br>
+		printName(name,++count);<br>
+	}<br>
+}<br>
+main(){<br>
+	char name[50];<br>
+	int count;<br>
+	cout<<"Enter your name : ";<br>
+	cin>>name;<br>
+	printName(name,0);<br>
+	getch();<br>
+}</p>
+<img src="Cpp14.png"><br>
+</body>
+</html>

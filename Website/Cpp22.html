@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Cpp program to calculate sin(theta).</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to calculate sin(theta).</h2>
+<p class="program">#include< iostream ><br>
+#include< cmath ><br>
+using namespace std;<br>
+long int fact(int num){<br>
+	long int fac=1;<br>
+	while(num>0){<br>
+		fac=fac*num;<br>
+		num--;<br>
+	}<br>
+	return fac;<br>
+}<br>
+main(){<br>
+	cout<<"Enter the value of x : ";<br>
+	float x,nume,term,sum=0;<br>
+	int i,deg;<br>
+	cin>>x;<br>
+	for(i=0;i<5;i++){<br>
+		deg=(2*i)+1;<br>
+		nume=pow(x,deg);<br>
+		term=nume/fact(deg);<br>
+		if(i%2==0)<br>
+			sum=sum+term;<br>
+		else<br>
+			sum=sum-term;<br>
+	}<br>
+	cout<<"sin "<< x<<" = "<< sum;<br>
+}</p>
+<img src="Cpp22.png"><br>
+</body>
+</html>

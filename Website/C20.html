@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>C program to use structure.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>C program to use structure.</h2>
+<p class="program">#include< stdio.h ><br>
+#include< conio.h ><br>
+struct Student{<br>
+	char name[10];<br>
+	int age;<br>
+	char gender;<br>
+};<br>
+int main(){<br>
+	struct Student s1;<br>
+	printf("Enter Name : ");<br>
+	gets(s1.name);<br>
+	printf("Enter age : ");<br>
+	scanf("%d",&s1.age);<br>
+	fflush(stdin);<br>
+	printf("Enter gender : ");<br>
+	scanf("%c",&s1.gender);<br>
+	printf("\nName : %s",s1.name);<br>
+	printf("\nAge : %d",s1.age);<br>
+	printf("\nGender : %c",s1.gender);<br>
+	getch();<br>
+}</p>
+<img src="C20.png"><br>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Cpp program to generate random numbers.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to generate random numbers.</h2>
+<p class="program">#include< Windows.h ><br>
+#include< iostream ><br>
+#include< conio.h ><br>
+using namespace std;<br>
+int sysRan(int n){<br>
+	SYSTEMTIME t;<br>
+	GetSystemTime(&t);<br>
+	int ranVal;<br>
+	ranVal=(t.wDay+t.wDayOfWeek+t.wHour+t.wMilliseconds<br>
+	+t.wMinute+t.wMonth+t.wSecond+t.wYear)%n;<br>
+	return(ranVal);<br>
+}<br>
+main(){<br>
+	system("cls");<br>
+	while(!kbhit()){<br>
+		int macNo=sysRan(10000);<br>
+		cout<<"Random Number = "<< macNo<< endl;<br>
+		Sleep(1000);<br>
+	}<br>
+	getch();<br>
+}</p>
+<img src="Cpp18.png"><br>
+</body>
+</html>

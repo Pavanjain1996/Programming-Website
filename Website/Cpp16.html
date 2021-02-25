@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Cpp program to print a given number in words.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>Cpp program to print a given number in words.</h2>
+<p class="program">#include< iostream ><br>
+#include< conio.h ><br>
+using namespace std;<br>
+main(){<br>
+	int ino;<br>
+	cout<<"Enter a number between 1 to 100 : ";<br>
+	cin>>ino;<br>
+	cout<<"\nNumber in words is\n\n";<br>
+	if(ino>=10 && ino<=19){<br>
+		switch(ino){<br>
+		case 10:<br>
+			cout<<"Ten";<br>
+			break;<br>
+		case 11:<br>
+		    cout<<"Eleven";<br>
+			break;<br>
+		case 12:<br>
+			cout<<"Twelve";<br>
+			break;<br>
+		case 13:<br>
+			cout<<"Thirteen";<br>
+			break;<br>
+		case 14:<br>
+			cout<<"Fourteen";<br>
+			break;<br>
+		case 15:<br>
+			cout<<"Fifteen";<br>
+			break;<br>
+		case 16:<br>
+			cout<<"Sixteen";<br>
+			break;<br>
+		case 17:<br>
+			cout<<"Seventeen";<br>
+			break;<br>
+		case 18:<br>
+			cout<<"Eighteen";<br>
+			break;<br>
+		case 19:<br>
+			cout<<"Nineteen";<br>
+			break;<br>
+	}<br>
+	}<br>
+	else{<br>
+	switch(ino/10){<br>
+		case 1:<br>
+			cout<<"";<br>
+			break;<br>
+		case 2:<br>
+			cout<<"Twenty ";<br>
+			break;<br>
+		case 3:<br>
+			cout<<"Thirty ";<br>
+			break;<br>
+		case 4:<br>
+			cout<<"Forty ";<br>
+			break;<br>
+		case 5:<br>
+			cout<<"Fifty ";<br>
+			break;<br>
+		case 6:<br>
+			cout<<"Sixty ";<br>
+			break;<br>
+		case 7:<br>
+			cout<<"Seventy ";<br>
+			break;<br>
+		case 8:<br>
+			cout<<"Eighty ";<br>
+			break;<br>
+		case 9:<br>
+			cout<<"Ninety ";<br>
+			break;<br>
+		case 10:<br>
+			cout<<"Hundred ";<br>
+			break;<br>
+	}<br>
+	switch(ino%10){<br>
+		case 0:<br>
+			cout<<"";<br>
+			break;<br>
+		case 1:<br>
+			cout<<"One";<br>
+			break;<br>
+		case 2:<br>
+			cout<<"Two";<br>
+			break;<br>
+		case 3:<br>
+			cout<<"Three";<br>
+			break;<br>
+		case 4:<br>
+			cout<<"Four";<br>
+			break;<br>
+		case 5:<br>
+			cout<<"Five";<br>
+			break;<br>
+		case 6:<br>
+			cout<<"Six";<br>
+			break;<br>
+		case 7:<br>
+			cout<<"Seven";<br>
+			break;<br>
+		case 8:<br>
+			cout<<"Eight";<br>
+			break;<br>
+		case 9:<br>
+			cout<<"Nine";<br>
+			break;<br>
+	}<br>
+	}<br>
+	getch();<br>
+}</p>
+<img src="Cpp16.png"><br>
+</body>
+</html>

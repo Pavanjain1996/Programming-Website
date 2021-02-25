@@ -1,0 +1,29 @@
+body
+{
+	background-color:rgb(10,200,150);
+}
+a:hover
+{
+	color:black;
+}
+a:active
+{
+	color:orange;
+}
+.topic
+{
+	text-decoration:underline;
+	color:red;
+	background-color:black;
+	width:32%;
+	text-align:center;
+}
+.program
+{
+	font-size:30px;
+	color:blue;
+}
+.end
+{
+	background-color:grey;
+}

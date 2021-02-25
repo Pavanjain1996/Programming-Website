@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>C program to reverse a string.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>C program to reverse a string.</h2>
+<p class="program">#include< stdio.h ><br>
+#include< conio.h ><br>
+#include< string.h ><br>
+int main(){<br>
+	char arr[20],temp;<br>
+	int i=0,n;<br>
+	printf("Enter a string : ");<br>
+	gets(arr);<br>
+	n=strlen(arr);<br>
+	for(i=0;i<n/2;i++){<br>
+		temp=arr[i];<br>
+		arr[i]=arr[n-i-1];<br>
+		arr[n-i-1]=temp;<br>
+	}<br>
+	printf("The reversed string is : ");<br>
+	puts(arr);<br>
+	getch();<br>
+}</p>
+<img src="C11.png"><br>
+</body>
+</html>

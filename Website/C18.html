@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>C program to find the fibonacci series till n terms.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>C program to find the fibonacci series till n terms.</h2>
+<p class="program">#include< stdio.h ><br>
+#include< conio.h ><br>
+int fibo(int n){<br>
+	if(n<=2)<br>
+		return 1;<br>
+	else<br>
+		return fibo(n-1)+fibo(n-2);<br>
+}<br>
+int main(){<br>
+	int a;<br>
+	printf("Which term of fibonacci series you want to find ? ");<br>
+	scanf("%d",&a);<br>
+	printf("%dth term of fibonacci series is : %d ",a,fibo(a));<br>
+	getch();<br>
+}</p>
+<img src="C18.png"><br>
+</body>
+</html>

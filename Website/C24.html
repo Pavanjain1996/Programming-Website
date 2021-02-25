@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>C program to make temperature convertor.</title>
+<link rel="stylesheet" type="text/css" href="MyStyle.css"/>
+</head>
+<body>
+<h2>C program to make temperature convertor.</h2>
+<p class="program">#include< stdio.h ><br>
+#include< conio.h ><br>
+void main()<br>
+{<br>
+	system("cls");<br>
+	printf("Temperature Converter");<br>
+	printf("\n");<br>
+	double temp,u1,u2;<br>
+	printf("Enter The Temperature : ");<br>
+	scanf("%lf",&temp);<br>
+	printf("\n");<br>
+	printf("1.Celcius");<br>
+	printf("\n");<br>
+	printf("2.Farhenheit");<br>
+	printf("\n");<br>
+	printf("3.Kelvin");<br>
+	printf("\n");<br>
+	printf("Enter The Unit Of Provided Temperature : ");<br>
+	scanf("%lf",&u1);<br>
+	printf("\n");<br>
+	printf("Enter The Unit In Which Temperature Is To Be Converted : ");<br>
+	scanf("%lf",&u2);<br>
+	if(u1==1 && u2==1){<br>
+		printf("The Temperature in celcius is %lf",temp);<br>
+	}<br>
+	else if(u1==2 && u2==2){<br>
+		printf("The Temperature in Farhenheit is %lf",temp);<br>
+	}<br>
+	else if(u1==1 && u2==1){<br>
+		printf("The Temperature in Kelvin is %lf",temp);<br>
+	}<br>
+	else if(u1==1 && u2==2){<br>
+		double cf = ((9/5)*temp)+32;<br>
+		printf("The Temperature In Farhenheit Is : %lf",cf);<br>
+	}<br>
+	else if(u1==1 && u2==3){<br>
+		double ck = temp + 273;<br>
+		printf("The Temperature Is Kelvin  Is : %lf",ck);<br>
+	}<br>
+	else if(u1==2 && u2==1){<br>
+		double fc = ((5*temp)-160)/9;<br>
+		printf("The Temperature In Celcius Is : %lf",fc);<br>
+	}<br>
+	else if (u1==2 && u2 ==3){<br>
+		double fk = ((5*temp)+2297)/9;<br>
+		printf("The Temperature In Kelvin Is : %lf",fk);<br>
+	}<br>
+	else if(u1==3 && u2==1){<br>
+		double kc = temp - 273 ;<br>
+		printf("The Temperature In Celcius Scale Is : %lf",kc);<br>
+	}<br>
+	else if(u1==3 && u2==2){<br>
+		double kf = ((9*temp)-2297)/5;<br>
+		printf("The Temperature In Fahrenheit Is : %lf",kf);<br>
+	}<br>
+	else{<br>
+		printf("INCORRECT CHOICE");<br>
+	}<br>
+	getch();<br>
+}</p>
+<img src="C24-1.png"><br>
+<img src="C24-2.png"><br>
+</body>
+</html>
